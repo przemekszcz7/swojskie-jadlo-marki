@@ -1,0 +1,1274 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swojskie Jadło — Catering i Obsługa Wydarzeń | Marki</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Tradycyjny catering i kompleksowa organizacja imprez okolicznościowych w Markach. Odkryj rzemieślnicze wędliny, tradycyjne sery regionalne i szlachetne ryby." />
+    <meta name="keywords" content="catering marki, swojskie jadło, swojskie wędliny, sery regionalne, wędzone ryby, obsługa imprez, wesele catering, warszawa, wiejski stół" />
+    <meta name="author" content="Swojskie Jadło" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.facebook.com/profile.php?id=100028021045826" />
+    <meta property="og:title" content="Swojskie Jadło — Catering i Obsługa Wydarzeń" />
+    <meta property="og:description" content="Tradycyjny catering i organizacja wydarzeń w Markach. Kulinarna tradycja z sercem." />
+    <meta property="og:image" content="https://i.ibb.co/rfbftvbw/302464620-950111242599568-1409042467424423437-n.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Swojskie Jadło — Catering i Obsługa Wydarzeń" />
+    <meta property="twitter:description" content="Tradycyjny catering i organizacja wydarzeń w Markach." />
+    <meta property="twitter:image" content="https://i.ibb.co/rfbftvbw/302464620-950111242599568-1409042467424423437-n.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="https://i.ibb.co/rfbftvbw/302464620-950111242599568-1409042467424423437-n.jpg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Styles -->
+    <style>
+      :root {
+        --color-primary: #111111;
+        --color-bg: #f7f6f2;
+        --color-accent: #b89b5e;
+        --color-accent-hover: #9c8047;
+        --color-secondary: #ffffff;
+        --color-text: #1c1c1c;
+        --color-text-muted: #555555;
+        --font-serif: "Cormorant Garamond", Georgia, serif;
+        --font-sans: "Montserrat", system-ui, -apple-system, sans-serif;
+        --transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      /* Reset & Base */
+      *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+        font-size: 16px;
+        -webkit-font-smoothing: antialiased;
+      }
+      body {
+        background-color: var(--color-bg);
+        color: var(--color-text);
+        font-family: var(--font-sans);
+        line-height: 1.7;
+        overflow-x: hidden;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+        transition: var(--transition);
+      }
+
+      /* Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--color-bg);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--color-accent);
+      }
+      ::selection {
+        background-color: var(--color-accent);
+        color: #ffffff;
+      }
+
+      /* Container */
+      .container {
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 30px;
+      }
+
+      /* Typography */
+      h1, h2, h3, h4 {
+        font-family: var(--font-serif);
+        color: var(--color-primary);
+        font-weight: 400;
+        letter-spacing: 0.02em;
+      }
+
+      /* Common Elements */
+      .section-header {
+        text-align: center;
+        margin-bottom: 70px;
+      }
+      .section-pretitle {
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.3em;
+        color: var(--color-accent);
+        text-transform: uppercase;
+        margin-bottom: 15px;
+        display: block;
+      }
+      .section-title {
+        font-size: clamp(2rem, 5vw, 3.2rem);
+        position: relative;
+        display: inline-block;
+        padding-bottom: 15px;
+      }
+      .section-title::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 1px;
+        background-color: var(--color-accent);
+      }
+
+      /* Buttons */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.25em;
+        padding: 16px 36px;
+        border: 1px solid transparent;
+        transition: var(--transition);
+        cursor: pointer;
+      }
+      .btn-primary {
+        background-color: var(--color-accent);
+        color: #ffffff;
+        border-color: var(--color-accent);
+      }
+      .btn-primary:hover {
+        background-color: transparent;
+        color: var(--color-accent);
+        transform: translateY(-3px);
+      }
+      .btn-outline {
+        background-color: transparent;
+        color: #ffffff;
+        border-color: rgba(255, 255, 255, 0.4);
+      }
+      .btn-outline:hover {
+        background-color: #ffffff;
+        color: #111111;
+        border-color: #ffffff;
+        transform: translateY(-3px);
+      }
+      .btn-outline-dark {
+        background-color: transparent;
+        color: #ffffff;
+        border-color: var(--color-accent);
+      }
+      .btn-outline-dark:hover {
+        background-color: var(--color-accent);
+        color: #ffffff;
+        transform: translateY(-3px);
+      }
+
+      /* Header */
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background: rgba(17, 17, 17, 0.95);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(184, 155, 94, 0.15);
+        transition: var(--transition);
+      }
+      .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 30px;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+      .logo {
+        display: flex;
+        flex-direction: column;
+      }
+      .logo-main {
+        font-family: var(--font-serif);
+        font-size: 1.6rem;
+        font-weight: 400;
+        letter-spacing: 0.15em;
+        color: #ffffff;
+        line-height: 1.1;
+      }
+      .logo-sub {
+        font-size: 0.6rem;
+        font-weight: 500;
+        letter-spacing: 0.35em;
+        color: var(--color-accent);
+        text-transform: uppercase;
+      }
+      .nav-menu {
+        display: flex;
+        gap: 35px;
+      }
+      .nav-link {
+        font-size: 0.75rem;
+        font-weight: 500;
+        letter-spacing: 0.2em;
+        color: rgba(255, 255, 255, 0.8);
+        position: relative;
+        padding: 5px 0;
+      }
+      .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: var(--color-accent);
+        transition: var(--transition);
+      }
+      .nav-link:hover::after {
+        width: 100%;
+      }
+      .header-cta {
+        display: block;
+      }
+      .header-cta .btn {
+        padding: 10px 22px;
+        font-size: 0.75rem;
+      }
+
+      /* Pure CSS Responsive Menu Toggle */
+      .nav-toggle {
+        display: none;
+      }
+      .nav-toggle-label {
+        display: none;
+        cursor: pointer;
+        padding: 10px;
+        z-index: 1010;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+      }
+      .nav-toggle-label span {
+        display: block;
+        width: 24px;
+        height: 2px;
+        background-color: #ffffff;
+        transition: var(--transition);
+      }
+
+      /* Hero Section */
+      .hero {
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+      .hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba(17, 17, 17, 0.6), rgba(17, 17, 17, 0.8)), url('https://i.ibb.co/Pss666ct/719188492-1985802669030415-4462492189981164117-n.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        z-index: 1;
+        transform: scale(1.05);
+        animation: slowZoom 12s ease-out forwards;
+      }
+      @keyframes slowZoom {
+        to { transform: scale(1.01); }
+      }
+      .hero-content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        max-width: 900px;
+        padding: 0 20px;
+        color: #ffffff;
+      }
+      .hero-subtitle {
+        font-size: 0.85rem;
+        font-weight: 500;
+        letter-spacing: 0.35em;
+        color: var(--color-accent);
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+      }
+      .hero-title {
+        font-size: clamp(2.8rem, 8vw, 5.2rem);
+        color: #ffffff;
+        font-weight: 300;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+        line-height: 1.15;
+        opacity: 0;
+        transform: translateY(25px);
+        animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
+      }
+      .hero-cta {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        opacity: 0;
+        transform: translateY(15px);
+        animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.7s forwards;
+      }
+      @keyframes fadeInUp {
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      /* O nas Section */
+      .about {
+        padding: 120px 0;
+        background-color: var(--color-bg);
+      }
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 80px;
+        align-items: center;
+      }
+      @media (min-width: 992px) {
+        .about-grid {
+          grid-template-columns: 1.1fr 0.9fr;
+        }
+      }
+      .about-text h2 {
+        font-size: clamp(2.2rem, 4vw, 3rem);
+        margin-bottom: 30px;
+        line-height: 1.2;
+      }
+      .about-p-main {
+        font-size: 1.1rem;
+        color: var(--color-primary);
+        margin-bottom: 40px;
+        font-weight: 300;
+      }
+      .about-values {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      @media (min-width: 600px) {
+        .about-values {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      .value-item h3 {
+        font-family: var(--font-sans);
+        font-size: 0.85rem;
+        font-weight: 600;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--color-accent);
+        margin-bottom: 10px;
+      }
+      .value-item p {
+        font-size: 0.9rem;
+        color: var(--color-text-muted);
+      }
+      .about-images {
+        position: relative;
+        height: 520px;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      .about-img-main {
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+        border-radius: 2px;
+        transition: var(--transition);
+      }
+      .about-img-offset {
+        width: 60%;
+        height: 60%;
+        object-fit: cover;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        border: 8px solid var(--color-bg);
+        border-radius: 2px;
+        transition: var(--transition);
+      }
+      .about-images:hover .about-img-main {
+        transform: translateY(-5px);
+      }
+      .about-images:hover .about-img-offset {
+        transform: translate(5px, 5px);
+      }
+
+      /* Usługi Section */
+      .services {
+        padding: 120px 0;
+        background-color: var(--color-secondary);
+      }
+      .services-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      @media (min-width: 768px) {
+        .services-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (min-width: 1200px) {
+        .services-grid {
+          grid-template-columns: repeat(6, 1fr);
+        }
+        .service-card:nth-child(1) { grid-column: span 2; }
+        .service-card:nth-child(2) { grid-column: span 2; }
+        .service-card:nth-child(3) { grid-column: span 2; }
+        .service-card:nth-child(4) { grid-column: 2 / span 2; }
+        .service-card:nth-child(5) { grid-column: 4 / span 2; }
+      }
+      .service-card {
+        background: var(--color-bg);
+        border: 1px solid rgba(184, 155, 94, 0.12);
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: var(--transition);
+      }
+      .service-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 40px rgba(184, 155, 94, 0.08);
+        border-color: var(--color-accent);
+      }
+      .service-num {
+        font-family: var(--font-serif);
+        font-size: 2.2rem;
+        color: rgba(184, 155, 94, 0.25);
+        line-height: 1;
+        margin-bottom: 25px;
+      }
+      .service-card:hover .service-num {
+        color: var(--color-accent);
+      }
+      .service-card-title {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+        color: var(--color-primary);
+      }
+      .service-card-desc {
+        font-size: 0.9rem;
+        color: var(--color-text-muted);
+        margin-bottom: 35px;
+        flex-grow: 1;
+      }
+      .service-img-wrapper {
+        width: 100%;
+        height: 190px;
+        overflow: hidden;
+        margin-top: auto;
+      }
+      .service-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: var(--transition);
+      }
+      .service-card:hover .service-img {
+        transform: scale(1.06);
+      }
+
+      /* Galeria Section (Key Section) */
+      .gallery {
+        padding: 120px 0;
+        background-color: var(--color-bg);
+      }
+      .gallery-masonry {
+        column-count: 1;
+        column-gap: 24px;
+      }
+      @media (min-width: 576px) {
+        .gallery-masonry {
+          column-count: 2;
+        }
+      }
+      @media (min-width: 992px) {
+        .gallery-masonry {
+          column-count: 3;
+        }
+      }
+      @media (min-width: 1280px) {
+        .gallery-masonry {
+          column-count: 4;
+        }
+      }
+      .gallery-item {
+        break-inside: avoid;
+        margin-bottom: 24px;
+        position: relative;
+        overflow: hidden;
+        background-color: var(--color-secondary);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.01);
+        transition: var(--transition);
+      }
+      .gallery-item img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .gallery-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(17, 17, 17, 0.75);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        padding: 20px;
+        text-align: center;
+        transition: var(--transition);
+      }
+      .gallery-item:hover img {
+        transform: scale(1.04);
+      }
+      .gallery-item:hover .gallery-overlay {
+        opacity: 1;
+      }
+      .gallery-title {
+        color: #ffffff;
+        font-family: var(--font-serif);
+        font-size: 1.25rem;
+        letter-spacing: 0.05em;
+        font-weight: 300;
+        text-transform: uppercase;
+        transform: translateY(15px);
+        transition: var(--transition);
+        border-bottom: 1px solid var(--color-accent);
+        padding-bottom: 8px;
+        display: inline-block;
+      }
+      .gallery-item:hover .gallery-title {
+        transform: translateY(0);
+      }
+
+      /* Opinie Section */
+      .reviews {
+        padding: 120px 0;
+        background-color: var(--color-secondary);
+      }
+      .reviews-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      @media (min-width: 768px) {
+        .reviews-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      .review-card {
+        background: var(--color-bg);
+        border: 1px solid rgba(184, 155, 94, 0.1);
+        padding: 50px 40px;
+        text-align: center;
+        transition: var(--transition);
+      }
+      .review-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+        border-color: var(--color-accent);
+      }
+      .review-quote {
+        font-family: var(--font-serif);
+        font-size: 3.5rem;
+        color: var(--color-accent);
+        opacity: 0.3;
+        line-height: 1;
+        margin-bottom: 10px;
+      }
+      .review-text {
+        font-family: var(--font-serif);
+        font-size: 1.2rem;
+        font-style: italic;
+        color: var(--color-primary);
+        margin-bottom: 25px;
+        line-height: 1.5;
+      }
+      .review-author {
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.15em;
+        color: var(--color-accent);
+        text-transform: uppercase;
+      }
+
+      /* Kontakt Section */
+      .contact {
+        padding: 120px 0;
+        background-color: var(--color-bg);
+      }
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 80px;
+      }
+      @media (min-width: 992px) {
+        .contact-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+      .contact-info h2 {
+        font-size: clamp(2.2rem, 4vw, 3rem);
+        margin-bottom: 20px;
+      }
+      .contact-lead {
+        font-size: 1.05rem;
+        color: var(--color-accent);
+        margin-bottom: 40px;
+      }
+      .contact-list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+      .contact-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+      }
+      .contact-icon {
+        width: 44px;
+        height: 44px;
+        border: 1px solid var(--color-accent);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        transition: var(--transition);
+      }
+      .contact-item:hover .contact-icon {
+        background-color: var(--color-accent);
+      }
+      .contact-icon svg {
+        width: 18px;
+        height: 18px;
+        fill: none;
+        stroke: var(--color-accent);
+        stroke-width: 1.5;
+        transition: var(--transition);
+      }
+      .contact-item:hover .contact-icon svg {
+        stroke: #ffffff;
+      }
+      .contact-text h3 {
+        font-family: var(--font-sans);
+        font-size: 0.8rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--color-primary);
+        margin-bottom: 5px;
+      }
+      .contact-text p, .contact-text a {
+        font-size: 0.95rem;
+        color: var(--color-text-muted);
+      }
+      .contact-text a:hover {
+        color: var(--color-accent);
+      }
+      .contact-social-wrapper {
+        margin-top: 40px;
+      }
+      .social-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 0.8rem;
+        font-weight: 500;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--color-primary);
+        border: 1px solid rgba(184, 155, 94, 0.3);
+        padding: 12px 28px;
+        transition: var(--transition);
+      }
+      .social-link:hover {
+        background-color: var(--color-accent);
+        color: #ffffff;
+        border-color: var(--color-accent);
+      }
+      .social-link svg {
+        width: 16px;
+        height: 16px;
+        fill: currentColor;
+      }
+
+      /* Final CTA */
+      .final-cta {
+        position: relative;
+        padding: 120px 0;
+        color: #ffffff;
+        text-align: center;
+        overflow: hidden;
+      }
+      .final-cta-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba(17, 17, 17, 0.75), rgba(17, 17, 17, 0.85)), url('https://i.ibb.co/xSNBMx83/670528921-1936950120582337-7644364033041234878-n.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        z-index: 1;
+      }
+      .final-cta-content {
+        position: relative;
+        z-index: 2;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      .final-cta h2 {
+        color: #ffffff;
+        font-size: clamp(2rem, 5vw, 3.5rem);
+        margin-bottom: 20px;
+        line-height: 1.2;
+      }
+      .final-cta p {
+        font-family: var(--font-serif);
+        font-size: 1.25rem;
+        font-style: italic;
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 40px;
+      }
+
+      /* Footer */
+      .footer {
+        background-color: #0c0c0c;
+        color: rgba(255, 255, 255, 0.5);
+        padding: 80px 0 40px 0;
+        border-top: 1px solid rgba(184, 155, 94, 0.1);
+        font-size: 0.85rem;
+      }
+      .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .footer-logo {
+        font-family: var(--font-serif);
+        font-size: 2.2rem;
+        color: #ffffff;
+        letter-spacing: 0.1em;
+        margin-bottom: 8px;
+        line-height: 1;
+      }
+      .footer-tagline {
+        font-size: 0.7rem;
+        font-weight: 500;
+        letter-spacing: 0.3em;
+        color: var(--color-accent);
+        text-transform: uppercase;
+        margin-bottom: 40px;
+      }
+      .footer-links {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .footer-link {
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        color: rgba(255, 255, 255, 0.6);
+      }
+      .footer-link:hover {
+        color: var(--color-accent);
+      }
+      .footer-divider {
+        width: 100%;
+        max-width: 400px;
+        height: 1px;
+        background-color: rgba(184, 155, 94, 0.15);
+        margin-bottom: 40px;
+      }
+      .footer-copy {
+        font-size: 0.75rem;
+        letter-spacing: 0.05em;
+        color: rgba(255, 255, 255, 0.3);
+      }
+
+      /* Mobile Navigation Overlay Mechanism */
+      @media (max-width: 1024px) {
+        .header-container {
+          padding: 15px 24px;
+        }
+        .nav-toggle-label {
+          display: flex;
+        }
+        .nav-menu {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background-color: #111111;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 30px;
+          transform: translateY(-100%);
+          opacity: 0;
+          pointer-events: none;
+          transition: var(--transition);
+          z-index: 1005;
+        }
+        .nav-link {
+          font-size: 1.2rem;
+        }
+        .header-cta {
+          display: none;
+        }
+
+        /* Active toggle states */
+        .nav-toggle:checked ~ .header-container .nav-menu {
+          transform: translateY(0);
+          opacity: 1;
+          pointer-events: auto;
+        }
+        .nav-toggle:checked ~ .header-container .nav-toggle-label span:nth-child(1) {
+          transform: rotate(45deg) translate(5px, 5px);
+        }
+        .nav-toggle:checked ~ .header-container .nav-toggle-label span:nth-child(2) {
+          opacity: 0;
+        }
+        .nav-toggle:checked ~ .header-container .nav-toggle-label span:nth-child(3) {
+          transform: rotate(-45deg) translate(5px, -5px);
+        }
+
+        /* Parallax off for performance on mobiles */
+        .hero-bg, .final-cta-bg {
+          background-attachment: scroll;
+        }
+      }
+    </style>
+
+    <!-- Schema.org JSON-LD Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["FoodEstablishment", "CateringService"],
+        "name": "Swojskie Jadło",
+        "image": "https://i.ibb.co/rfbftvbw/302464620-950111242599568-1409042467424423437-n.jpg",
+        "url": "https://www.facebook.com/profile.php?id=100028021045826",
+        "telephone": "+48501768891",
+        "email": "swojskiejadlo00@wp.pl",
+        "priceRange": "$$$",
+        "servesCuisine": "Traditional Polish, Gourmet, Regional",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Marki",
+          "postalCode": "05-270",
+          "addressCountry": "PL"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "52.3315",
+          "longitude": "21.0964"
+        }
+      }
+    </script>
+  </head>
+  <body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <div class="header-container">
+        <!-- Logo -->
+        <a href="#" class="logo">
+          <span class="logo-main">SWOJSKIE JADŁO</span>
+          <span class="logo-sub">TRADYCYJNE WYROBY I OBSŁUGA</span>
+        </a>
+
+        <!-- Menu Links -->
+        <nav class="nav-menu">
+          <a href="#o-nas" class="nav-link">O NAS</a>
+          <a href="#uslugi" class="nav-link">OFERTA</a>
+          <a href="#galeria" class="nav-link">GALERIA</a>
+          <a href="#opinie" class="nav-link">OPINIE</a>
+          <a href="#kontakt" class="nav-link">KONTAKT</a>
+        </nav>
+
+        <!-- CTA Header -->
+        <div class="header-cta">
+          <a href="tel:501768891" class="btn btn-outline-dark">ZADZWOŃ</a>
+        </div>
+
+        <!-- Mobile Burger Trigger -->
+        <label for="nav-toggle" class="nav-toggle-label">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+    </header>
+
+    <!-- Section 1: Hero -->
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <p class="hero-subtitle">Catering i organizacja wyjątkowych wydarzeń</p>
+        <h1 class="hero-title">Swojskie Jadło</h1>
+        <div class="hero-cta">
+          <a href="#kontakt" class="btn btn-primary">Zamów catering</a>
+          <a href="tel:501768891" class="btn btn-outline">Zadzwoń</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: O Nas -->
+    <section class="about" id="o-nas">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <span class="section-pretitle">Tradycyjne rzemiosło kulinarnie</span>
+            <h2>Kulinarna tradycja z dbałością o każdy detal</h2>
+            <p class="about-p-main">
+              Tworzymy wyjątkowe aranżacje cateringowe oraz niezapomniane kulinarne kompozycje, dbając o tradycyjny smak staropolskich wyrobów.
+            </p>
+            <div class="about-values">
+              <div class="value-item">
+                <h3>Najwyższa jakość</h3>
+                <p>Wszystkie specjały tworzymy według tradycyjnych receptur z surowców pochodzących z ekologicznych hodowli.</p>
+              </div>
+              <div class="value-item">
+                <h3>Estetyka podania</h3>
+                <p>Nasz stół biesiadny oraz bufet cateringowy zachwycają formą, dekoracjami i dbałością o każdy detal.</p>
+              </div>
+              <div class="value-item">
+                <h3>Doświadczenie</h3>
+                <p>Z powodzeniem obsłużyliśmy setki bankietów, wesel oraz imprez firmowych.</p>
+              </div>
+              <div class="value-item">
+                <h3>Profesjonalna obsługa</h3>
+                <p>Od planowania menu po sprawny, pełny serwis kulinarny na miejscu — dbamy o doskonałość każdego kroku.</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-images">
+            <img class="about-img-main" src="https://i.ibb.co/5HYH1Z2/675447724-1942685386675477-5854032134934101444-n.jpg" alt="Tradycyjna szynka na desce" />
+            <img class="about-img-offset" src="https://i.ibb.co/WNTbY93m/678046874-1942685450008804-4843138517557459015-n.jpg" alt="Szlachetne wędliny i sery" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Usługi -->
+    <section class="services" id="uslugi">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pretitle">Nasza oferta</span>
+          <h2 class="section-title">Usługi cateringowe</h2>
+        </div>
+        <div class="services-grid">
+          <!-- Card 1 -->
+          <div class="service-card">
+            <div>
+              <div class="service-num">01</div>
+              <h3 class="service-card-title">Catering</h3>
+              <p class="service-card-desc">Kompleksowa, wysmakowana oprawa bankietów, konferencji i eleganckich przyjęć biznesowych.</p>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="service-card">
+            <div>
+              <div class="service-num">02</div>
+              <h3 class="service-card-title">Imprezy</h3>
+              <p class="service-card-desc">Organizacja wesel, komunii, chrzcin oraz jubileuszy z dbałością o tradycyjny i elegancki styl biesiadowania.</p>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="service-card">
+            <div>
+              <div class="service-num">03</div>
+              <h3 class="service-card-title">Wędliny</h3>
+              <p class="service-card-desc">Tradycyjne, rzemieślnicze wyroby wędzone dymem olchowym bez dodatku konserwantów.</p>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="service-card">
+            <div>
+              <div class="service-num">04</div>
+              <h3 class="service-card-title">Sery</h3>
+              <p class="service-card-desc">Kompozycje naturalnych serów dojrzewających i regionalnych podawane ze świeżymi owocami i miodem.</p>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="service-card">
+            <div>
+              <div class="service-num">05</div>
+              <h3 class="service-card-title">Ryby</h3>
+              <p class="service-card-desc">Tradycyjne pstrągi i łososie wędzone tradycyjną metodą o nieskazitelnym, delikatnym smaku.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Galeria (Key Section with all 23 images) -->
+    <section class="gallery" id="galeria">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pretitle">Kolekcja kulinarna</span>
+          <h2 class="section-title">Galeria naszych realizacji</h2>
+        </div>
+        <div class="gallery-masonry">
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/xSNBMx83/670528921-1936950120582337-7644364033041234878-n.jpg" alt="Banquet catering board" />
+            <div class="gallery-overlay"><span class="gallery-title">Półmisek wędlin szlachetnych</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/5HYH1Z2/675447724-1942685386675477-5854032134934101444-n.jpg" alt="Smoked meat board" />
+            <div class="gallery-overlay"><span class="gallery-title">Tradycyjna szynka weselna</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/WNTbY93m/678046874-1942685450008804-4843138517557459015-n.jpg" alt="Premium sausages" />
+            <div class="gallery-overlay"><span class="gallery-title">Swojska spiżarnia</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/0jcwQxmx/696509845-1959610874982928-4666406923962160496-n.jpg" alt="Local sourdough and pates" />
+            <div class="gallery-overlay"><span class="gallery-title">Wiejskie chleby i pasztety</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/0yS9g1dy/693467993-1959610921649590-6430481779884245725-n.jpg" alt="Cheese platter" />
+            <div class="gallery-overlay"><span class="gallery-title">Sery regionalne i dojrzewające</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/4Rq2M2g8/692556800-1959611044982911-6740413530938406163-n.jpg" alt="Sausages and bacon" />
+            <div class="gallery-overlay"><span class="gallery-title">Tradycyjne wędzenie olchowe</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/7NxJgRvX/700944896-1968517667425582-3433180273170783156-n.jpg" alt="Elegant banquet buffet decoration" />
+            <div class="gallery-overlay"><span class="gallery-title">Oprawa stołu biesiadnego</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/bR54hhGG/704914303-1972632617014087-6191509075569565976-n.jpg" alt="Modern buffet setup" />
+            <div class="gallery-overlay"><span class="gallery-title">Nasze bufety biesiadne</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/GQQQ3TFC/704187653-1972632697014079-4809677537123347486-n.jpg" alt="Cured sausages" />
+            <div class="gallery-overlay"><span class="gallery-title">Wyroby dojrzewające</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/9HLzgYWT/705154725-1972632740347408-8127386379906815620-n.jpg" alt="Ham on wooden board" />
+            <div class="gallery-overlay"><span class="gallery-title">Szynka staropolska</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/mCQhQJFj/704881531-1972632790347403-938197987504048486-n.jpg" alt="Lard in stone bowl" />
+            <div class="gallery-overlay"><span class="gallery-title">Smalec domowy w kamionce</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/B5L6bB3B/705293534-1972632833680732-8672814236725684361-n.jpg" alt="Platter of meats" />
+            <div class="gallery-overlay"><span class="gallery-title">Wędzonki prosto z wędzarni</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/C3r2mhMw/707415024-1972632890347393-5189296383487362985-n.jpg" alt="Traditional polish ham" />
+            <div class="gallery-overlay"><span class="gallery-title">Kiełbasa podsuszana i pieczona</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/sdfK4gHz/705745223-1972632957014053-7849611506622036996-n.jpg" alt="Roasted pork loin" />
+            <div class="gallery-overlay"><span class="gallery-title">Pieczony schab i karczek</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/4gdqjs8R/704715831-1972633010347381-6326792625458299243-n.jpg" alt="Traditional pate platter" />
+            <div class="gallery-overlay"><span class="gallery-title">Kolekcja domowych pasztetów</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/6RkxdPtJ/704782928-1972633047014044-4646767362807664800-n.jpg" alt="Marinated wild mushrooms" />
+            <div class="gallery-overlay"><span class="gallery-title">Grzyby leśne i marynaty</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/gZLCshzY/704869336-1972633073680708-1029051016662930177-n.jpg" alt="Lard on table" />
+            <div class="gallery-overlay"><span class="gallery-title">Swojski smalec z cebulką</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/LhYR30Jw/704767077-1972633120347370-6507181813565550230-n.jpg" alt="Meats display with herbs" />
+            <div class="gallery-overlay"><span class="gallery-title">Ziołowa oprawa wyrobów</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/6cbPVwjP/704147960-1972633167014032-753949981866578849-n.jpg" alt="Cold cuts setup" />
+            <div class="gallery-overlay"><span class="gallery-title">Tradycyjna zimna płyta</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/Pss666ct/719188492-1985802669030415-4462492189981164117-n.jpg" alt="Main buffet tablescape" />
+            <div class="gallery-overlay"><span class="gallery-title">Stoły biesiadne i bankietowe</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/tp0BrV23/715464109-1985802792363736-4019204260244794459-n.jpg" alt="Roast piglet specality" />
+            <div class="gallery-overlay"><span class="gallery-title">Udźce i ryby pieczone</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/hxk5N3jG/716910916-1985802952363720-7492430978794322033-n.jpg" alt="Herbs and seasoning details" />
+            <div class="gallery-overlay"><span class="gallery-title">Detale kunsztu kulinarnie</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="https://i.ibb.co/Y7V36ZmP/716962034-1985803099030372-387743974424073126-n.jpg" alt="Traditional polish table close-up" />
+            <div class="gallery-overlay"><span class="gallery-title">Wiejski stół biesiadny</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Opinie -->
+    <section class="reviews" id="opinie">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-pretitle">Rekomendacje</span>
+          <h2 class="section-title">Głosy naszych gości</h2>
+        </div>
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="review-quote">“</div>
+            <p class="review-text">Pyszne, pięknie podane jedzenie. Profesjonalna obsługa.</p>
+          </div>
+          <div class="review-card">
+            <div class="review-quote">“</div>
+            <p class="review-text">Cudowne jedzenie, estetyka na najwyższym poziomie.</p>
+          </div>
+          <div class="review-card">
+            <div class="review-quote">“</div>
+            <p class="review-text">Terminowość i jakość bez zarzutu.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Kontakt -->
+    <section class="contact" id="kontakt">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <span class="section-pretitle">Zapytaj o catering</span>
+            <h2>Skontaktuj się z nami</h2>
+            <p class="contact-lead">Stwórzmy wspólnie idealne menu na Twoje nadchodzące wydarzenie.</p>
+            
+            <div class="contact-list">
+              <!-- Telefon -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div class="contact-text">
+                  <h3>Telefon</h3>
+                  <a href="tel:501768891">501 768 891</a>
+                </div>
+              </div>
+              
+              <!-- Email -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2" ry="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22,6 12,13 2,6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div class="contact-text">
+                  <h3>Adres E-mail</h3>
+                  <a href="mailto:swojskiejadlo00@wp.pl">swojskiejadlo00@wp.pl</a>
+                </div>
+              </div>
+              
+              <!-- Lokalizacja -->
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                <div class="contact-text">
+                  <h3>Lokalizacja</h3>
+                  <p>Marki 05-270</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-social-wrapper">
+              <a href="https://www.facebook.com/profile.php?id=100028021045826" target="_blank" rel="noopener noreferrer" class="social-link">
+                <svg viewBox="0 0 24 24"><path d="M9 8H7v3h2v9h3v-9h3.6l.4-3H12V6c0-.9.2-1.2 1-1.2h2.8V1.5C15.3 1.4 14.2 1 13 1c-2.4 0-4 1.5-4 4.2V8z"/></svg>
+                Facebook Profil
+              </a>
+            </div>
+          </div>
+          <div style="width: 100%; height: 450px; background-color: #eae7e0; border: 1px solid rgba(184, 155, 94, 0.15); display: flex; align-items: center; justify-content: center; text-align: center; padding: 40px;">
+            <div>
+              <svg style="width: 48px; height: 48px; stroke: var(--color-accent); stroke-width: 1; fill: none; margin-bottom: 20px; display: inline-block;" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <h3 style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 10px; font-weight: 400;">Marki i Okolice</h3>
+              <p style="font-size: 0.9rem; color: var(--color-text-muted); max-width: 320px; margin: 0 auto 30px auto;">Świadczymy usługi cateringowe w Markach, Warszawie oraz na terenie całego województwa mazowieckiego.</p>
+              <a href="tel:501768891" class="btn btn-outline-dark">Zamów na Swoje Wydarzenie</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Final CTA -->
+    <section class="final-cta">
+      <div class="final-cta-bg"></div>
+      <div class="final-cta-content">
+        <h2>Tworzymy smak, który robi wrażenie</h2>
+        <p>Pozwól nam zorganizować tradycyjną oprawę kulinarną Twojego przyjęcia</p>
+        <a href="tel:501768891" class="btn btn-primary">Zadzwoń i zamów catering</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <span class="footer-logo">SWOJSKIE JADŁO</span>
+        <span class="footer-tagline">Tradycyjny Catering Regionalny</span>
+        <div class="footer-divider"></div>
+        <div class="footer-links">
+          <a href="#o-nas" class="footer-link">O Nas</a>
+          <a href="#uslugi" class="footer-link">Oferta</a>
+          <a href="#galeria" class="footer-link">Galeria</a>
+          <a href="https://www.facebook.com/profile.php?id=100028021045826&sk=reviews" target="_blank" rel="noopener noreferrer" class="footer-link">Opinie na Facebooku</a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Swojskie Jadło. Wszelkie prawa zastrzeżone. Adres: Marki 05-270</p>
+      </div>
+    </footer>
+
+  </body>
+</html>

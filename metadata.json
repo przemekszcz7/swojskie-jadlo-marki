@@ -1,0 +1,6 @@
+{
+  "name": "Swojskie Jadło",
+  "description": "Catering i organizacja wyjątkowych wydarzeń gastronomicznych w Markach.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
